@@ -1,7 +1,16 @@
 # CP FastIO
 
-Ultra-fast input/output template for Competitive Programming.  
+Ultra-fast input/output template for Competitive Programming. 
 Uses `fread`/`fwrite` with buffered output.
+
+## Performance
+
+After running [benchmark.cpp](https://github.com/minhkhang1008/CP-FastIO/blob/main/benchmark.cpp) 5 times, this is the result:
+
+- cin/cout: (5278±80)ms
+- FASTIO: (171.4±2.6)ms
+
+It can be observed that FASTIO is significantly faster than normal cin/cout up 30 times.
 
 ## Usage
 
@@ -15,7 +24,6 @@ Uses `fread`/`fwrite` with buffered output.
 ```
 5
 1 2 3 4 5
-
 ````
 
 **Code**:
@@ -50,3 +58,4 @@ signed main() {
 * Default `#define int long long`. Remove if you need 32-bit.
 * Do not mix with `cin/cout` unless necessary.
 * Only integers are supported by default
+* If the judge doesn't accept pragma, gently remove it
