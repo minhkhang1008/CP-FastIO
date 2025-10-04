@@ -28,9 +28,6 @@ It can be observed that FASTIO is significantly faster than normal cin/cout up 3
 
 **Code**:
 ```cpp
-#include <bits/stdc++.h>
-using namespace std;
-
 // paste FASTIO.CPP here
 
 signed main() {
